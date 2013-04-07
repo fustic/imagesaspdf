@@ -11,7 +11,6 @@ $(function(){
            "img/page0008.jpg"
        ],
        blankImage:"img/grey.gif",
-       scale:0.5,
        downloadFileLink:"img/page0008.jpg"
    });
 });
