@@ -10,8 +10,11 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/normalize.min.css" media="all">
+        <link rel="stylesheet" href="css/jquery-pdfdoc.css" media="all">
+        <!--<link rel="stylesheet" href="js/jquery.print-preview/css/print-preview.css">-->
+        <link rel="stylesheet" href="css/jquery.imagesaspdf.css" media="all">
+        <link rel="stylesheet" href="css/main.css" media="all">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -22,63 +25,31 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
+                <h1 class="title">Preview Images as Pdf</h1>
             </header>
         </div>
 
         <div class="main-container">
             <div class="main wrapper clearfix">
-
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
+                <div id="preview" style="width:100%; height: 800px;"></div>
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
+                <h3>&COPY;Vadim Ivanov</h3>
             </footer>
         </div>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.js"><\/script>')</script>
-
+        <script src="js/vendor/jquery.lazyload.min.js"></script>
+        <script src="js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="js/vendor/jquery.PrintArea.js"></script>
+        <script src="js/vendor/jquery.printElement.min.js"></script>
+        <script src="js/jquery.print-preview/jquery.print-preview.js"></script>
+        <script src="js/vendor/jquery.printPage.js"></script>
+        <script src="js/vendor/jquery.jqprint-0.3.js"></script>
+        <script src="js/vendor/jquery.imagesaspdf.js"></script>
         <script src="js/main.js"></script>
-
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
     </body>
 </html>

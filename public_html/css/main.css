@@ -74,22 +74,22 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #666;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #666;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #f0f0f0;
 }
 
 .title {
-    color: white;
+    color: #666;
 }
 
 /* ==============
@@ -141,7 +141,7 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
+    color: #999999;
     padding: 20px 0;
 }
 
@@ -218,9 +218,9 @@ nav a:hover {
 
     .header-container,
     .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
+        -webkit-box-shadow: 0 5px 10px #ccc;
+           -moz-box-shadow: 0 5px 10px #ccc;
+                box-shadow: 0 5px 10px #ccc;
     }
 
 /* ============
